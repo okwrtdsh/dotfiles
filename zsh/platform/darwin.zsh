@@ -112,7 +112,10 @@ function sp() {
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:/opt/local/man:$MANPATH
 
+export XDG_CONFIG_HOME="$HOME/.config"
 
 # Here, with vim, ignore .(aux|log|pdf) files
 zstyle ':completion:*:*:vim:*' file-patterns '^*.(aux|log|pdf|bbl|dvi|blg):source-files' '*:all-files'
 zstyle ':completion:*:*:open:*' file-patterns '^*.(aux|log|tex|bbl|dvi|blg):source-files' '*:all-files'
+
+alias vim=nvim

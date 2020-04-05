@@ -1,0 +1,74 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+hook_add = '''
+  source ~/.config/nvim/plugins/denite.vim
+'''
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+  source ~/.config/nvim/plugins/nerdtree.vim
+'''
+
+[[plugins]]
+repo = 'jistr/vim-nerdtree-tabs'
+hook_add = '''
+  source ~/.config/nvim/plugins/vim-nerdtree-tabs.vim
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+  source ~/.config/nvim/plugins/vim-airline.vim
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+hook_add = '''
+  source ~/.config/nvim/plugins/indentLine.vim
+'''
+
+[[plugins]]
+repo = 'tpope/vim-commentary'
+
+[[plugins]]
+repo = 'w0rp/ale'
+hook_add = '''
+  source ~/.config/nvim/plugins/ale.vim
+'''
+
+[[plugins]]
+repo = 'vim-scripts/grep.vim'
+hook_add = '''
+  source ~/.config/nvim/plugins/grep.vim
+'''
+
+[[plugins]]
+repo = 'vim-scripts/CSApprox'
+
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+
+[[plugins]]
+repo = 'deoplete-plugins/deoplete-jedi'
+
+[[plugins]]
+repo = 'jmcantrell/vim-virtualenv'
+
+[[plugins]]
+repo = 'scrooloose/syntastic'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
