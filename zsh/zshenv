@@ -1,0 +1,28 @@
+#-*- mode: shell-script; coding: utf-8; -*-
+unlimit
+limit stacksize 8192
+limit coredumpsize 8192
+limit -s
+
+umask 022
+
+export LANG=ja_JP.UTF-8
+export LC_ALL=ja_JP.UTF-8
+
+# Setup command search path
+typeset -U path
+
+export RSYNC_RSH=ssh
+export CVS_RSH=ssh
+
+for conf in $HOME/dotfiles/zsh/conf.d/*.zsh; do
+    source ${conf};
+done
+
+if [[ $(uname) == Darwin  ]]; then
+    # OSX
+    source $HOME/dotfiles/zsh/platform/darwin.zsh
+elif [[ $(uname) == Linux  ]]; then
+    # ubuntu
+    source $HOME/dotfiles/zsh/platform/linux.zsh
+fi

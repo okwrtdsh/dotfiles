@@ -1,0 +1,11 @@
+for conf in $HOME/dotfiles/zsh/conf.d/*.zsh; do
+    source ${conf};
+done
+
+if [[ $(uname) == Darwin  ]]; then
+    # OSX
+    source $HOME/dotfiles/zsh/platform/darwin.zsh
+elif [[ $(uname) == Linux  ]]; then
+    # ubuntu
+    source $HOME/dotfiles/zsh/platform/linux.zsh
+fi
