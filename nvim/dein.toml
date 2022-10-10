@@ -72,3 +72,9 @@ repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'okwrtdsh/vim-suggest'
+hook_add = '''
+  source ~/.config/nvim/plugins/vim-suggest.vim
+'''

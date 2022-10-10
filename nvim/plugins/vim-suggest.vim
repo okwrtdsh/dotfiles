@@ -1,0 +1,1 @@
+set completefunc=suggest#GoogleComplete

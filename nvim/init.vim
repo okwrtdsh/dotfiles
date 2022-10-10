@@ -358,3 +358,7 @@ au FileType javascript set tabstop=2|set shiftwidth=2|set expandtab
 au FileType json set tabstop=2|set shiftwidth=2|set expandtab
 au FileType html set tabstop=2|set shiftwidth=2|set expandtab
 au FileType sql set tabstop=2|set shiftwidth=2|set expandtab
+
+" 自動的にquickfix-windowを開く
+autocmd QuickFixCmdPost *grep* cwindow
+
